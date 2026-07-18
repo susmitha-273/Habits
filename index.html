@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aura is an intelligent Gen-AI habit coach that monitors behaviors, provides custom CBT strategies, and triggers real-time support mechanisms to help you beat harmful addictions.">
+    <title>Aura — Gen-AI Habit Transformation Hub</title>
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="./styles.css">
+    
+    <!-- Chart.js CDN for Analytics Graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="app-layout">
+        
+        <!-- Sidebar Navigation Drawer -->
+        <aside class="sidebar" aria-label="Sidebar Menu">
+            <div class="brand-section">
+                <div class="brand-logo-glow" aria-hidden="true"></div>
+                <h1>AURA</h1>
+            </div>
+            
+            <nav class="nav-menu" aria-label="Primary Navigation">
+                <ul class="nav-list" role="tablist" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+                    <li class="nav-item" role="presentation">
+                        <a href="#dashboard" class="active" data-tab="dashboard" id="nav-dashboard" role="tab" aria-selected="true" aria-controls="app-main-content">
+                            <span class="nav-icon" aria-hidden="true">📊</span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#coach" data-tab="coach" id="nav-coach" role="tab" aria-selected="false" aria-controls="app-main-content">
+                            <span class="nav-icon" aria-hidden="true">✨</span>
+                            <span>Aura Coach</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#tracker" data-tab="tracker" id="nav-tracker" role="tab" aria-selected="false" aria-controls="app-main-content">
+                            <span class="nav-icon" aria-hidden="true">📅</span>
+                            <span>Habit Log</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#settings" data-tab="settings" id="nav-settings" role="tab" aria-selected="false" aria-controls="app-main-content">
+                            <span class="nav-icon" aria-hidden="true">⚙️</span>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Viewport Canvas -->
+        <main class="main-canvas">
+            
+            <!-- Global Action Bar -->
+            <header class="global-header">
+                <!-- Live streak score -->
+                <div class="nav-stats-badge streak-pill" title="Current Active Streak" id="nav-streak-count" aria-live="polite">
+                    0 🔥
+                </div>
+                
+                <!-- Live Aura Points -->
+                <div class="nav-stats-badge points-pill" title="Aura Points Balance" id="nav-points-count" aria-live="polite">
+                    0 AP
+                </div>
+                
+                <!-- Emergency De-escalation Button -->
+                <button class="btn-sos" id="global-sos-btn" aria-label="Activate Emergency Mode">
+                    <span class="nav-icon" aria-hidden="true">🚨</span>
+                    <span>SOS Mode</span>
+                </button>
+            </header>
+
+            <!-- Dynamic Component Content Canvas -->
+            <div class="viewport-content" id="app-main-content" role="main">
+                <!-- JS Modules inject layouts dynamically here -->
+                <noscript>
+                    <div style="padding: 40px; text-align: center; color: white;">
+                        <h2>Javascript Required</h2>
+                        <p>Aura Habit Coach requires JavaScript to generate AI insights, render charts, and coordinate dashboards.</p>
+                    </div>
+                </noscript>
+            </div>
+
+        </main>
+        
+    </div>
+
+    <!-- Application bootstrapping script -->
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "aura-habit-coach",
+  "version": "1.0.0",
+  "description": "Gen-AI powered Habit Transformation Coach",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "habit-tracker",
+    "gemini",
+    "cbt",
+    "ai-coach"
+  ],
+  "author": "Antigravity",
+  "license": "MIT"
+}
